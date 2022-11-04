@@ -6,7 +6,7 @@ function findPair(arr,k){
 	arr = arr.sort((a,b)=>a-b);
 	left = 0,right =arr.length-1;
 	while(left<right){
-		if(left[i] = right[i] ==k) return true;
+		if(left[i] + right[i] ==k) return true;
 		else if(left[i] + right[i] <k) left++;
 		else right--;
 	}
